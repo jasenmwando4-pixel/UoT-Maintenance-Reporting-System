@@ -1,0 +1,31 @@
+{
+  "name": "school-activity-api",
+  "version": "1.0.0",
+  "description": "University maintenance reporting system with React, Express, and PostgreSQL.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build",
+    "start:prod": "node server.js",
+    "postinstall": "npm --prefix client run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.4",
+    "pg": "^8.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
